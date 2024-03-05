@@ -11,7 +11,7 @@
 
 body{
     background-color: hsl(0, 0%, 84%);
-    font-family: 'Advent';
+    font-family: 'Advent' sans-serif;
 }
 
 .container{
