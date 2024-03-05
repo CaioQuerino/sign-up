@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Advent';
+    src: url(../font/Advent_Pro/AdventPro-VariableFont_wdth\,wght.ttf);
+}
+
+body{
+    background-color: hsl(0, 0%, 84%);
+    font-family: 'Advent';
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 550px);
+    grid-template-rows: auto;
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+.container .image{
+    display: flex;
+    justify-content: right;
+}
+
+.container .image img{
+    max-width: 100%;
+
+}
+
+.container> .content{
+    background-color: hsl(0, 0%, 89%);
+    padding: 103px 28px;
+}
+
+.container> .content h1{
+    color: hsl(0, 0%, 45%);
+    font-size: 45px;
+    font-weight: 700;
+    word-wrap: break-word;
+    margin-bottom: 7px;
+}
+
+.container> .content h2{
+    color: hsl(0, 0%, 45%);
+    font-size: 32px;
+    font-family: Advent Pro;
+    font-weight: 500;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+}
+
+.container> .content p{
+    color: hsl(0, 0%, 45%);
+    font-size: 24px;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-bottom: 31px;
+    }
+
+    form{
+        color: hsl(0, 0%, 59%);
+font-size: 24px;
+font-family: Advent Pro;
+font-weight: 600;
+word-wrap: break-word
+    }
+
+
+    .dados-user input[type="text"],
+    .dados-user input[type="email"],
+    .dados-user input[type="tel"] {
+        border: none; /* Removendo a borda padrão */
+        border-bottom: 1px solid #969696; /* Adicionando uma borda inferior */
+        padding-bottom: 5px; /* Espaçamento abaixo da linha */
+        margin-bottom: 10px; /* Espaçamento entre os campos */
+        width: 100%; /* Largura total do campo */
+        outline: none; /* Removendo a borda ao clicar */
+        background-color: transparent; /* Removendo o background */
+    }
+
+    /* Estilo para foco no campo */
+    .dados-user input[type="text"]:focus,
+    .dados-user input[type="email"]:focus,
+    .dados-user input[type="tel"]:focus,
+    .dados-user select:focus {
+        border-bottom: 1px solid #000; /* Altere a cor conforme necessário */
+        
+    }
+
+
+@media screen and (max-width: 1100px) {
+    .container {
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: auto ;
+    }
+  
+    .container > .image {
+      justify-content: center; 
+    }
+
+    @media screen and (max-width: 834px){
+        .container {
+            grid-template-columns: repeat(1, 100%);
+            grid-template-rows: auto ;
+}
+
+  }
+}
